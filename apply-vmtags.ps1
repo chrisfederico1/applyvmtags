@@ -19,7 +19,7 @@ if ($reply -match "[nN]")
 	exit 
 }
 
-# insert 3 blank lines
+# insert 2 blank lines
 "";""
 
 # Define Tags
@@ -28,7 +28,7 @@ $0200 = get-tag 0200
 $1700 = get-tag 1700
 $2200 = get-tag 2200
 
-# insert 3 blank lines
+# insert 2 blank lines
 "";""
 
 # Define vm arrays for Backup Folders 
@@ -38,7 +38,7 @@ write-host "INFO: Gathereing all VMs in Avamar Backup 0200...."
 $AVBKUP0200VM = Get-Folder -Name  'Avamar Backup 0200' | Get-VM
 write-host "INFO: Number of VM's in Avamar Backup 0200 "$AVBKUP0200VM.Count
 
-# insert 3 blank lines
+# insert 2 blank lines
 "";""
 
 # All Avamar VM's in the 1700 folder
@@ -46,7 +46,7 @@ write-host "INFO: Gathereing all VMs in Avamar Backup 1700...."
 $AVBKUP1700VM = Get-Folder -Name 'Avamar Backup 1700' | Get-VM
 write-host "INFO: Number of VM's in Avamar Backup 1700 "$AVBKUP1700VM.count
 
-# insert 3 blank lines
+# insert 2 blank lines
 "";""
 
 
@@ -55,7 +55,7 @@ write-host "INFO: Gathereing all VMs in Avamar Backup 2200...."
 $AVBKUP2200VM = Get-Folder -Name 'Avamar Backup 2200' | Get-VM
 write-host "INFO: Number of VM's in Avamar Backup 2200 "$AVBKUP2200VM.count
 
-# insert 3 blank lines
+# insert 2 blank lines
 "";""
 
 
@@ -74,7 +74,7 @@ foreach ($vm in $AVBKUP0200VM)
     New-TagAssignment -tag $0200 -Entity $vm
 }
 
-# insert 3 blank lines
+# insert 2 blank lines
 "";""
 
 
@@ -85,7 +85,7 @@ foreach ($vm in $AVBKUP1700VM)
 }
 
 
-# insert 3 blank lines
+# insert 2 blank lines
 "";""
 
 
