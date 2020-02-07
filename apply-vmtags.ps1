@@ -3,7 +3,7 @@
 # Note only connect to one vCenter at a time !!
 
 # Start Logging
-Start-Transcript -path .\applyvmtagslog.txt -append
+Start-Transcript -path .\applyvmtagslog.txt -Force
 
 # clear Screen
 Clear-Host
